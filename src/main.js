@@ -15,7 +15,7 @@ Vue.use(BootstrapVueIcons)
 // define routes
 import MasterGuide from './components/MasterGuide.vue'
 import Strategy from './components/Strategy.vue'
-import Tournament from './components/Tournament.vue'
+import Tournament from './components/tournament/Tournament.vue'
 
 const routes = [
   { path: '/', redirect: '/guide' },
