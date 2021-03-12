@@ -97,7 +97,8 @@ export default {
                 'score': [attackingPlayer['score'], defendingPlayer['score']],
                 'nicknames': [attackingPlayer['nickname'], defendingPlayer['nickname']],
                 'strategy': strategy,
-                'scheme': scheme
+                'scheme': scheme,
+                'report': match['report']
               })
             }
             // 두 번째 유저와 일치 할 경우
@@ -122,7 +123,8 @@ export default {
                 'score': [defendingPlayer['score'], attackingPlayer['score']],
                 'nicknames': [defendingPlayer['nickname'], attackingPlayer['nickname']],
                 'strategy': [...strategy].reverse(),
-                'scheme': scheme.map(s => [...s].reverse())
+                'scheme': scheme.map(s => [...s].reverse()),
+                'report': match['report']
               })
             }
           })

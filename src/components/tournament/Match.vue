@@ -3,7 +3,7 @@
     <b-table-simple bordered class="text-center m-0">
       <b-thead>
         <th>{{ score[0] }}</th>
-        <th>{{ nicknames[0] }} <small>vs</small> {{ nicknames[1] }}</th>
+        <th>{{ nicknames[0] }} <small>vs</small> {{ nicknames[1] }} <a v-if="report" v-bind:href="report" target="_blank">[Report]</a></th>
         <th>{{ score[1] }}</th>
       </b-thead>
       <b-tbody>
@@ -42,6 +42,9 @@ export default {
     },
     scheme: function () {
       return this.match['scheme']
+    },
+    report: function () {
+      return this.match['report']
     }
   }
 }
