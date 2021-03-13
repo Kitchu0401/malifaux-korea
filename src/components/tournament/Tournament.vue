@@ -142,7 +142,7 @@ export default {
     }
   },
   created: function () {
-    fetch('data/tournament.json')
+    fetch('data/tournament.json?nocache=true')
       .then(r => r.json())
       .then(d => this.process(d))
       .catch(e => console.error(e))

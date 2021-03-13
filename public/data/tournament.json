@@ -104,6 +104,108 @@
                     }
                 ],
                 "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67628&page=1"
+            },
+            {
+                "date": "2021-03-13",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "어니버니",
+                        "strategy": {
+                            "Public Execution": 2
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": 1,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "김백정",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": 2,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 1,
+                            "Spread them out": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67652&page=1"
+            },
+            {
+                "date": "2021-03-13",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "Kenneth",
+                        "strategy": {
+                            "Public Execution": 2
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": 0,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": 0,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": 1,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67661&page=1"
+            },
+            {
+                "date": "2021-03-13",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": 0,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": 1,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "김백정",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": 0,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 0,
+                            "Spread them out": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67662&page=1"
             }
         ]
     }
