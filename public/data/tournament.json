@@ -1,8 +1,24 @@
 [
     {
         "title": "2021 The First Quater Malifaux League",
-        "fromDate": "2021-03-13",
-        "toDate": "2021-04-03",
+        "quater": [
+            {
+                "fromDate": "2021-03-11",
+                "toDate": "2021-03-19"
+            },
+            {
+                "fromDate": "2021-03-20",
+                "toDate": "2021-03-26"
+            },
+            {
+                "fromDate": "2021-03-27",
+                "toDate": "2021-04-02"
+            },
+            {
+                "fromDate": "2021-04-03",
+                "toDate": "2021-04-11"
+            }
+        ],
         "participant": [
             {
                 "nickname": "베헤모스",

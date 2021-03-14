@@ -32,14 +32,22 @@
       </div>
     </b-card-header>
     <b-collapse v-bind:id="`participant-detail-${participantIndex}`" visible accordion="my-accordion" role="tabpanel">
+
+      <!-- match list found -->
       <b-card-body class="p-1">
-        <b-card-group>
+        <b-card-group v-if="match.length > 0">
           <match
             v-for="(m, mi) in match"
             v-bind:key="mi"
             v-bind:match="m" />
         </b-card-group>
       </b-card-body>
+
+      <!-- match list not found -->
+      <b-card-body v-if="match.length <= 0">
+        <b-card-text>No match history found ?.?</b-card-text>
+      </b-card-body>
+      
     </b-collapse>
   </b-card>
 </template>
@@ -54,7 +62,8 @@ export default {
   },
   props: {
     participant: Object,
-    participantIndex: Number
+    participantIndex: Number,
+    selectedQuater: Number
   },
   computed: {
     nickname: function () {
@@ -70,7 +79,7 @@ export default {
       return this.participant['stats']
     },
     match: function () {
-      return this.participant['match']
+      return this.participant['match'].filter(m => m['quater'] === this.selectedQuater)
     }
   }
 }

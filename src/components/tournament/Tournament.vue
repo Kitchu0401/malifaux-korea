@@ -1,11 +1,23 @@
 <template>
   <div>
 
-      <participant
-        v-for="(participant, participantIndex) in participants"
-        v-bind:key="participant['nickname']"
-        v-bind:participant="participant"
-        v-bind:participant-index="participantIndex" />
+    <b-row class="mb-2">
+      <b-col md="8">
+        <p class="mb-0 text-left" style="font-size: 1.5rem;"><strong>2021 The First Quater Malifaux League</strong></p>
+      </b-col>
+      <b-col md="4">
+        <b-select
+          v-model="selectedQuater"
+          v-bind:options="selectedQuaterOptions" />
+      </b-col>
+    </b-row>
+
+    <participant
+      v-for="(participant, participantIndex) in participants"
+      v-bind:key="participant['nickname']"
+      v-bind:participant="participant"
+      v-bind:participant-index="participantIndex"
+      v-bind:selected-quater="selectedQuater" />
 
   </div>
 </template>
@@ -22,7 +34,14 @@ export default {
   },
   data: function () {
     return {
-      tournaments: []
+      tournaments: [],
+      selectedQuater: 1,
+      selectedQuaterOptions: [
+        { value: 1, text: 'Quater 1 (2021.03.12 - 2021.03.19)' },
+        { value: 2, text: 'Quater 2 (2021.03.20 - 2021.03.26)' },
+        { value: 3, text: 'Quater 3 (2021.03.27 - 2021.04.02)' },
+        { value: 4, text: 'Quater 4 (2021.04.03 - 2021.04.11)' }
+      ]
     }
   },
   computed: {
@@ -38,6 +57,7 @@ export default {
         return
       }
       
+      // 토너먼트 정보 초기화
       tournaments.forEach(tournament => {
         // 고정값 초기화
         tournament['participant'].forEach(player => {
@@ -97,6 +117,7 @@ export default {
               }
 
               player['match'].push({
+                'quater': match['quater'],
                 'score': [attackingPlayer['score'], defendingPlayer['score']],
                 'nicknames': [attackingPlayer['nickname'], defendingPlayer['nickname']],
                 'surrender': [attackingPlayer['surrender'], defendingPlayer['surrender']],
@@ -125,6 +146,7 @@ export default {
               ]
 
               player['match'].push({
+                'quater': match['quater'],
                 'score': [defendingPlayer['score'], attackingPlayer['score']],
                 'nicknames': [defendingPlayer['nickname'], attackingPlayer['nickname']],
                 'surrender': [defendingPlayer['surrender'], attackingPlayer['surrender']],
@@ -142,9 +164,19 @@ export default {
           ['desc', 'desc', 'desc', 'asc', 'desc'])
       })
 
-      // if (tournaments.length <= 0) return []
-      // return _.orderBy(this.tournaments[0]['participant'], 'stats.point', 'desc')
       this.tournaments = tournaments
+
+      // 쿼터 정보 초기화
+      this.initializeQuater()
+    },
+    initializeQuater: function () {
+      const current = new Date()
+      const quater = this.tournaments[0]['quater']
+      for (var i in quater) {
+        if (Date.parse(quater[i]['fromDate']) < current) {
+          this.selectedQuater = parseInt(i) + 1
+        }
+      }
     }
   },
   created: function () {
