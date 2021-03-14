@@ -12,7 +12,7 @@
         <b-table-simple bordered class="m-0 text-light score-board">
           <b-thead>
             <b-tr>
-              <b-th>P</b-th>
+              <b-th>LP</b-th>
               <b-th>T</b-th>
               <b-th>W</b-th>
               <b-th>D</b-th>

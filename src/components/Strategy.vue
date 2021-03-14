@@ -122,7 +122,7 @@ export default {
     }
   },
   created: function () {
-    fetch('data/strategy.json')
+    fetch('data/strategy.json?nocache=true')
       .then(r => r.json())
       .then(d => this.ruleset = d)
       .catch(e => console.error(e))
