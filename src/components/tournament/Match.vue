@@ -3,7 +3,7 @@
     <b-table-simple bordered class="text-center m-0">
       <b-thead>
         <th>{{ score[0] }}</th>
-        <th>{{ nicknames[0] }} <small>vs</small> {{ nicknames[1] }} <a v-if="report" v-bind:href="report" target="_blank">[Report]</a></th>
+        <th v-html="nicknames" />
         <th>{{ score[1] }}</th>
       </b-thead>
       <b-tbody>
@@ -34,8 +34,20 @@ export default {
     score: function () {
       return this.match['score']
     },
+    nicknameA: function () {
+      const attacingPlayerSurrender = this.match['surrender'][0] ? ' <small class="text-danger">(S)</small>' : ''
+      return `${this.match['nicknames'][0]}${attacingPlayerSurrender}`
+    },
+    nicknameB: function () {
+      const defendingPlayerSurrender = this.match['surrender'][1] ? ' <small class="text-danger">(S)</small>' : ''
+      return `${this.match['nicknames'][1]}${defendingPlayerSurrender}`
+    },
     nicknames: function () {
-      return this.match['nicknames']
+      const reportLink = `<a v-if="report" href="${this.match['report']}" target="_blank">[Report]</a>`
+      return `${this.nicknameA}<small> vs </small>${this.nicknameB} ${reportLink}`
+    },
+    surrender: function () {
+      return this.match['surrender']
     },
     strategy: function() {
       return this.match['strategy']

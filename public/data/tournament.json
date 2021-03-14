@@ -77,6 +77,41 @@
                 "isOvertime": false,
                 "player": [
                     {
+                        "nickname": "지구발트",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 0,
+                            "Spread them out": 0
+                        }
+                    },
+                    {
+                        "nickname": "엥겔지수",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 1,
+                            "Spread them out": null
+                        },
+                        "surrender": true
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67668&page=1"
+            },
+            {
+                "date": "2021-03-12",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
                         "nickname": "베헤모스",
                         "strategy": {
                             "Public Execution": 2

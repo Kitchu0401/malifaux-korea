@@ -13,6 +13,7 @@
           <b-thead>
             <b-tr>
               <b-th>P</b-th>
+              <b-th>T</b-th>
               <b-th>W</b-th>
               <b-th>D</b-th>
               <b-th>L</b-th>
@@ -21,6 +22,7 @@
           <b-tbody>
             <b-tr>
               <b-td>{{ stats['point'] }}</b-td>
+              <b-td>{{ stats['total'] }}</b-td>
               <b-td>{{ stats['win'] }}</b-td>
               <b-td>{{ stats['draw'] }}</b-td>
               <b-td>{{ stats['lose'] }}</b-td>

@@ -28,7 +28,6 @@ export default {
   computed: {
     participants: function () {
       if (this.tournaments.length <= 0) return []
-      // return _.orderBy(this.tournaments[0]['participant'], 'stats.point', 'desc')
       return this.tournaments[0]['participant']
     }
   },
@@ -47,7 +46,8 @@ export default {
             'win': 0,
             'draw': 0,
             'lose': 0,
-            'point': 0
+            'total': 0,
+            'point': 0,
           }
         })
 
@@ -61,7 +61,9 @@ export default {
 
           var attackingPlayer = match['player'][0]
           var defendingPlayer = match['player'][1]
-          var winOrLose = attackingPlayer['score'] == defendingPlayer['score'] ? 0 : attackingPlayer['score'] > defendingPlayer['score'] ? 1 : -1
+          var winOrLose = attackingPlayer['score'] > defendingPlayer['score'] || defendingPlayer['surrender'] ? 1
+                        : attackingPlayer['score'] < defendingPlayer['score'] || attackingPlayer['surrender'] ? -1
+                        : 0;
 
           var strategy = [
             Object.values(attackingPlayer['strategy'])[0],
@@ -83,6 +85,7 @@ export default {
             // 첫 번째 유저와 일치 할 경우
             if (player['nickname'] == attackingPlayer['nickname']) {
               // 승/패/무승부 횟수 가산
+              player['stats']['total'] += 1
               if (winOrLose == 1) {
                 player['stats']['win'] += 1
                 player['stats']['point'] += 3
@@ -96,6 +99,7 @@ export default {
               player['match'].push({
                 'score': [attackingPlayer['score'], defendingPlayer['score']],
                 'nicknames': [attackingPlayer['nickname'], defendingPlayer['nickname']],
+                'surrender': [attackingPlayer['surrender'], defendingPlayer['surrender']],
                 'strategy': strategy,
                 'scheme': scheme,
                 'report': match['report']
@@ -104,6 +108,7 @@ export default {
             // 두 번째 유저와 일치 할 경우
             else if (player['nickname'] == defendingPlayer['nickname']) {
               // 승/패/무승부 횟수 가산
+              player['stats']['total'] += 1
               if (winOrLose == -1) {
                 player['stats']['win'] += 1
                 player['stats']['point'] += 3
@@ -122,6 +127,7 @@ export default {
               player['match'].push({
                 'score': [defendingPlayer['score'], attackingPlayer['score']],
                 'nicknames': [defendingPlayer['nickname'], attackingPlayer['nickname']],
+                'surrender': [defendingPlayer['surrender'], attackingPlayer['surrender']],
                 'strategy': [...strategy].reverse(),
                 'scheme': scheme.map(s => [...s].reverse()),
                 'report': match['report']
@@ -132,8 +138,8 @@ export default {
 
         tournament['participant'] = _.orderBy(
           tournament['participant'],
-          ['stats.point', 'stats.win', 'stats.draw', 'stats.lose'],
-          ['desc', 'desc', 'desc', 'desc'])
+          ['stats.point', 'stats.win', 'stats.draw', 'stats.total', 'stats.lose'],
+          ['desc', 'desc', 'desc', 'desc', 'asc'])
       })
 
       // if (tournaments.length <= 0) return []
