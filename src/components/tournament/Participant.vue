@@ -2,12 +2,31 @@
   <b-card no-body class="mb-1">
     <b-card-header
       header-tag="header" role="tab"
-      class="p-0 d-flex w-100 justify-content-between"
+      class="p-2 d-flex text-light bg-dark w-100 justify-content-between"
       v-b-toggle="`participant-detail-${participantIndex}`">
-      <h4 class="p-2 m-0 align-middle">{{ nickname }} <small>({{ faction }} - {{ master }})</small></h4>
+      <div class="text-left">
+        <h4 class="">{{ nickname }}</h4>
+        <p class="mb-0"><strong>{{ master }}</strong> <small>({{ faction }})</small></p>
+      </div>
       <div>
-        <p class="m-1 text-right">Point: {{ stats['point'] }}</p>
-        <p class="m-1 text-right"><small>W: {{ stats['win'] }} / L: {{ stats['lose'] }} / D: {{ stats['draw'] }}</small></p>
+        <b-table-simple bordered class="m-0 text-light score-board">
+          <b-thead>
+            <b-tr>
+              <b-th>P</b-th>
+              <b-th>W</b-th>
+              <b-th>D</b-th>
+              <b-th>L</b-th>
+            </b-tr>
+          </b-thead>
+          <b-tbody>
+            <b-tr>
+              <b-td>{{ stats['point'] }}</b-td>
+              <b-td>{{ stats['win'] }}</b-td>
+              <b-td>{{ stats['draw'] }}</b-td>
+              <b-td>{{ stats['lose'] }}</b-td>
+            </b-tr>
+          </b-tbody>
+        </b-table-simple>
       </div>
     </b-card-header>
     <b-collapse v-bind:id="`participant-detail-${participantIndex}`" visible accordion="my-accordion" role="tabpanel">
@@ -56,5 +75,15 @@ export default {
 </script>
 
 <style>
+.score-board {
+  font-size: 0.75rem;
+}
 
+.score-board th {
+  padding: 0.25rem 0.5rem;
+}
+
+.score-board td {
+  padding: 0.25rem 0.5rem;
+}
 </style>
