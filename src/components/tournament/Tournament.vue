@@ -160,8 +160,8 @@ export default {
 
         tournament['participant'] = _.orderBy(
           tournament['participant'],
-          ['stats.point', 'stats.win', 'stats.draw', 'stats.lose', 'stats.total'],
-          ['desc', 'desc', 'desc', 'asc', 'desc'])
+          ['stats.point', 'stats.win', 'stats.draw', 'stats.total', 'stats.lose'],
+          ['desc', 'desc', 'desc', 'desc', 'asc'])
       })
 
       this.tournaments = tournaments
