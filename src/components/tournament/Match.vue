@@ -43,7 +43,7 @@ export default {
       return `${this.match['nicknames'][1]}${defendingPlayerSurrender}`
     },
     nicknames: function () {
-      const reportLink = `<a v-if="report" href="${this.match['report']}" target="_blank">[Report]</a>`
+      const reportLink = this.match['report'] ? `<a v-if="report" href="${this.match['report']}" target="_blank">[Report]</a>` : ''
       return `${this.nicknameA}<small> vs </small>${this.nicknameB} ${reportLink}`
     },
     surrender: function () {
