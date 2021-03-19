@@ -7,15 +7,15 @@
                 "toDate": "2021-03-19"
             },
             {
-                "fromDate": "2021-03-20",
+                "fromDate": "2021-03-19",
                 "toDate": "2021-03-26"
             },
             {
-                "fromDate": "2021-03-27",
+                "fromDate": "2021-03-26",
                 "toDate": "2021-04-02"
             },
             {
-                "fromDate": "2021-04-03",
+                "fromDate": "2021-04-02",
                 "toDate": "2021-04-11"
             }
         ],
@@ -84,6 +84,11 @@
                 "nickname": "민맨",
                 "faction": "TEN THUNDERS",
                 "master": "Lucas McCabe"
+            },
+            {
+                "nickname": "MAMNOM",
+                "faction": "BAYOU",
+                "master": "Captain Zipp"
             }
         ],
         "match": [
@@ -257,6 +262,178 @@
                     }
                 ],
                 "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67662&page=1"
+            },
+            {
+                "date": "2021-03-14",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "민맨",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "시마도르",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        },
+                        "surrender": true
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67699&page=1"
+            },
+            {
+                "date": "2021-03-13",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 2,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "김백정",
+                        "strategy": {
+                            "Public Execution": 2
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        },
+                        "surrender": true
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67713&page=1"
+            },
+            {
+                "date": "2021-03-19",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "지구발트",
+                        "strategy": {
+                            "Public Execution": 3
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": 1,
+                            "Catch and Release": null,
+                            "Leave your Mark": 2,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Public Execution": 2
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 1,
+                            "Spread them out": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67839&page=1"
+            },
+            {
+                "date": "2021-03-19",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "MAMNOM",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": null
+                        },
+                        "surrender": true
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67840&page=1"
+            },
+            {
+                "date": "2021-03-19",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "어니버니",
+                        "strategy": {
+                            "Public Execution": 3
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": null,
+                            "Spread them out": 2
+                        }
+                    },
+                    {
+                        "nickname": "시마도르",
+                        "strategy": {
+                            "Public Execution": 0
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 1,
+                            "Spread them out": 0
+                        }
+                    }
+                ]
             }
         ]
     }
