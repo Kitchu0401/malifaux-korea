@@ -175,7 +175,7 @@ export default {
   },
   computed: {
     selectedMasters: function () {
-      return this.masters.filter(m => m.faction.every(f => this.selectedFactions.indexOf(f) >= 0))
+      return this.masters.filter(m => m.faction.some(f => this.selectedFactions.indexOf(f) >= 0))
     }
   },
   methods: {

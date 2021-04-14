@@ -434,6 +434,414 @@
                         }
                     }
                 ]
+            },
+            {
+                "date": "2021-03-20",
+                "quater": 2,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "어니버니",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": 1,
+                            "Assassinate": 2,
+                            "Claim Jump": null,
+                            "Sabotage": null
+                        }
+                    },
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Corrupted Ley Lines": 4
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": null,
+                            "Sabotage": 1
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67929&page=1"
+            },
+            {
+                "date": "2021-03-20",
+                "quater": 2,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "민맨",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": null,
+                            "Assassinate": 1,
+                            "Claim Jump": 1,
+                            "Sabotage": null
+                        }
+                    },
+                    {
+                        "nickname": "김백정",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": null,
+                            "Sabotage": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67934&page=1"
+            },
+            {
+                "date": "2021-03-20",
+                "quater": 2,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "지구발트",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": 1,
+                            "Sabotage": 1
+                        }
+                    },
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Corrupted Ley Lines": 1
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": 1,
+                            "Assassinate": 1,
+                            "Claim Jump": null,
+                            "Sabotage": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=67936&page=1"
+            },
+            {
+                "date": "2021-03-21",
+                "quater": 2,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "베헤모스",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": 1,
+                            "Assassinate": null,
+                            "Claim Jump": 2,
+                            "Sabotage": null
+                        }
+                    },
+                    {
+                        "nickname": "Kenneth",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": null,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": null,
+                            "Sabotage": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "2021-03-18",
+                "quater": 1,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "푸백곰",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 0,
+                            "Spread them out": null
+                        }
+                    },
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Public Execution": 1
+                        },
+                        "scheme": {
+                            "Breakthrough": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Leave your Mark": 0,
+                            "Spread them out": null
+                        },
+                        "surrender": true
+                    }
+                ]
+            },
+            {
+                "date": "2021-03-19",
+                "quater": 2,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": 1,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": 1,
+                            "Sabotage": null
+                        }
+                    },
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Corrupted Ley Lines": 3
+                        },
+                        "scheme": {
+                            "Task Prisoner": 1,
+                            "Vendetta": null,
+                            "Assassinate": null,
+                            "Claim Jump": null,
+                            "Sabotage": 1
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68179&page=1"
+            },
+            {
+                "date": "2021-04-02",
+                "quater": 3,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Symbol of Authority": 3
+                        },
+                        "scheme": {
+                            "Vendetta": 1,
+                            "Claim Jump": null,
+                            "Sabotage": null,
+                            "Let Them Bleed": 2,
+                            "Research Mission": null
+                        }
+                    },
+                    {
+                        "nickname": "시마도르",
+                        "strategy": {
+                            "Symbol of Authority": 0
+                        },
+                        "scheme": {
+                            "Vendetta": 1,
+                            "Claim Jump": 0,
+                            "Sabotage": null,
+                            "Let Them Bleed": null,
+                            "Research Mission": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68438&page=1"
+            },
+            {
+                "date": "2021-04-03",
+                "quater": 4,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Recover Evidence": 2
+                        },
+                        "scheme": {
+                            "Assassinate": 2,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": 2,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        }
+                    },
+                    {
+                        "nickname": "민맨",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Spread Them Out": 1,
+                            "Runic Binding": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68424&page=1"
+            },
+            {
+                "date": "2021-04-03",
+                "quater": 4,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": 1,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        }
+                    },
+                    {
+                        "nickname": "시마도르",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": null,
+                            "Hidden Martyrs": 0,
+                            "Catch and Release": null,
+                            "Spread Them Out": null,
+                            "Runic Binding": 0
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68453&page=1"
+            },
+            {
+                "date": "2021-04-06",
+                "quater": 4,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "베헤모스",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": 1,
+                            "Hidden Martyrs": 0,
+                            "Catch and Release": null,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        }
+                    },
+                    {
+                        "nickname": "에스s이e",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        },
+                        "surrender": true
+                    }
+                ]
+            },
+            {
+                "date": "2021-04-02",
+                "quater": 3,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "근근타이",
+                        "strategy": {
+                            "Symbol of Authority": 3
+                        },
+                        "scheme": {
+                            "Vendetta": null,
+                            "Claim Jump": 2,
+                            "Sabotage": 1,
+                            "Let Them Bleed": null,
+                            "Research Mission": null
+                        }
+                    },
+                    {
+                        "nickname": "Kenneth",
+                        "strategy": {
+                            "Symbol of Authority": 2
+                        },
+                        "scheme": {
+                            "Vendetta": null,
+                            "Claim Jump": 1,
+                            "Sabotage": null,
+                            "Let Them Bleed": null,
+                            "Research Mission": null
+                        }
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68543&page=1"
+            },
+            {
+                "date": "2021-04-04",
+                "quater": 4,
+                "isOvertime": false,
+                "player": [
+                    {
+                        "nickname": "킷츄",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": 1,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        }
+                    },
+                    {
+                        "nickname": "에스s이e",
+                        "strategy": {
+                            "Recover Evidence": 0
+                        },
+                        "scheme": {
+                            "Assassinate": null,
+                            "Hidden Martyrs": null,
+                            "Catch and Release": null,
+                            "Spread Them Out": null,
+                            "Runic Binding": null
+                        },
+                        "surrender": true
+                    }
+                ],
+                "report": "https://gall.dcinside.com/mgallery/board/view/?id=miniaturegame&no=68565&page=1"
             }
         ]
     }
